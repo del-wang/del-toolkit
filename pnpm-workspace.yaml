@@ -2,26 +2,29 @@ packages:
   - examples/*
   - packages/*
 
+allowBuilds:
+  esbuild: true
+  lefthook: true
+
 catalog:
-  react: ^19.2.4
+  react: ^19.3.1
 
 catalogs:
   types:
     "@types/node": ^18.0.0 || ^20.0.0 || >=22.0.0
-    "@types/react": ^19.2.10
-    "@types/react-dom": ^19.2.3
+    "@types/react": ^19.3.0
+    "@types/react-dom": ^19.3.0
   dev:
-    "@biomejs/biome": ^2.3.13
-    "@changesets/cli": ^2.29.8
-    lefthook: ^2.0.16
-    tsx: ^4.21.0
-    tsup: ^8.5.1
-    tsdown: ^0.20.1
-    turbo: ^2.7.6
-    typescript: ^5.9.3
-    clean-pkg-json: ^1.3.0
+    "@biomejs/biome": ^2.6.4
+    "@changesets/cli": ^3.0.3
+    lefthook: ^2.2.2
+    tsx: ^4.23.15
+    tsdown: ^0.23.4
+    turbo: ^2.11.10
+    typescript: ^7.0.2
+    clean-pkg-json: ^2.0.0
   test:
-    "@testing-library/dom": ^10.4.1
-    "@testing-library/react": ^16.3.2
-    jsdom: ^27.4.0
-    vitest: ^4.0.18
+    "@testing-library/dom": ^10.4.2
+    "@testing-library/react": ^16.3.3
+    jsdom: ^30.1.3
+    vitest: ^5.0.5

@@ -65,16 +65,12 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true,
+      "preset": "recommended",
       "a11y": "warn",
       "nursery": {
-        "useSortedClasses": {
+        "useTailwindSortedClasses": {
           "fix": "safe",
-          "level": "warn",
-          "options": {
-            "attributes": ["classList", "className"],
-            "functions": ["clsx", "cva", "tw", "tw.*"]
-          }
+          "level": "warn"
         }
       },
       "style": {
@@ -84,7 +80,8 @@
       "correctness": {
         "noUnusedImports": "error",
         "noUnusedVariables": "error",
-        "useExhaustiveDependencies": "warn"
+        "useExhaustiveDependencies": "warn",
+        "noComponentHookFactories": "warn"
       },
       "suspicious": {
         "noConfusingVoidType": "off",
@@ -95,5 +92,8 @@
         "noAccumulatingSpread": "off"
       }
     }
+  },
+  "tailwind": {
+    "attributes": ["class", "className", "classList"]
   }
 }

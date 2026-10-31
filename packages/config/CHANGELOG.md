@@ -1,5 +1,15 @@
 # @del-wang/config
 
+## 1.8.0
+
+### Minor Changes
+
+- fix(biome): migrate to `nursery.useTailwindSortedClasses`
+
+  Biome v2.6 renamed `nursery.useSortedClasses` to `nursery.useTailwindSortedClasses` and moved its `attributes` / `functions` options to the top-level `tailwind` configuration. The old key is now rejected as an unknown key, which makes Biome fail to load the whole config (breaking format-on-save in the VS Code extension and the `biome` CLI).
+
+  This preset now requires Biome v2.6+.
+
 ## 1.7.0
 
 ### Minor Changes
